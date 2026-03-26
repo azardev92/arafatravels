@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arafa Travels & Tours | Trusted Travel Partner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Arafa Travels & Tours Logo">
+    <span>Arafa <span class="gold">Travels & Tours</span></span>
+  </div>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO SLIDER -->
+
+<section class="hero-slider">
+
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=1600&q=80');"></div>
+
+  
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1600&q=80');"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Travel Made Simple, Reliable & Affordable</h1>
+    <p>Complete travel solutions with professional support and guidance</p>
+
+    <div class="hero-trust">
+      ✔ Trusted travel service from Ayyampet, Thanjavur
+    </div>
+
+    <div class="hero-buttons">
+      <a class="btn" href="tel:+918870075643">📞 Call Now</a>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Welcome to Arafa Travels & Tours</h2>
+  <p class="subtext">
+    Based in Ayyampet, Thanjavur, Tamil Nadu, Arafa Travels & Tours provides dependable travel services for individuals, families, and groups. We focus on making travel easy, comfortable, and affordable.
+  </p>
+</section>
+
+<section>
+  <h2>Our Core Services</h2>
+  <p class="subtext">Complete travel solutions under one roof</p>
+
+  <div class="services-grid">
+    <div class="card">
+      <h3>✈️ Flight Booking</h3>
+      <p>Domestic and international ticket booking with reliable support and competitive fares.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛂 Visa Assistance</h3>
+      <p>Guidance and support for travel documentation and visa-related requirements.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏨 Hotel Booking</h3>
+      <p>Comfortable hotel options ranging from budget stays to premium accommodation.</p>
+    </div>
+
+    <div class="card">
+      <h3>🕋 Umrah Packages</h3>
+      <p>Well-organized Umrah travel arrangements with care, clarity, and complete assistance.</p>
+    </div>
+  </div>
+
+  <div class="section-btn">
+    <a class="btn" href="services.html">View All Services</a>
+  </div>
+</section>
+
+<section class="highlight-section">
+  <h2>Why Choose Arafa Travels & Tours</h2>
+
+  <div class="services-grid">
+    <div class="card">
+      <h3>Trusted Support</h3>
+      <p>Friendly and dependable service for every stage of your journey.</p>
+    </div>
+
+    <div class="card">
+      <h3>Affordable Options</h3>
+      <p>Travel solutions planned to suit different budgets and needs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Guidance</h3>
+      <p>Clear assistance for bookings, travel planning, and documentation support.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Plan Your Next Journey With Confidence</h2>
+  <p>Get in touch with our team for trusted travel assistance</p>
+  <a class="btn cta-btn" href="contact.html">Get in Touch</a>
+</section>
+
+<section class="quick-contact">
+  <h2>Get in Touch</h2>
+  <p>📍 Ayyampet, Thanjavur, Tamil Nadu</p>
+  <p>📞 +91 XXXXX XXXXX</p>
+
+  <div class="section-btn">
+    <a class="btn" href="contact.html">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Arafa Travels & Tours | Ayyampet, Thanjavur, Tamil Nadu</p>
+</footer>
+
+<script>
+  let slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  function showNextSlide() {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  setInterval(showNextSlide, 4000);
+</script>
+
+</body>
+</html>
