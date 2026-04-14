@@ -1,93 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About Us | Arafa Travels & Tours</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn more about Arafa Travels & Tours, a trusted travel service provider in Ayyampet, Thanjavur, Tamil Nadu.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Arafa Travels & Tours</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Arafa Travels & Tours Logo">
+    <span>Arafa <span class="gold">Travels & Tours</span></span>
+  </a>
 
-<div class="logo">
-<img src="images/logo.png">
-<span>Arafa <span class="gold">Travels & Tours</span></span>
-</div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html" class="active">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
-
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<!-- TITLE -->
-
-<section>
-
-<h1 style="margin-top:40px;">About Arafa Travels & Tours</h1>
-
-<p class="subtext">
-Trusted travel services from Ayyampet, Thanjavur, Tamil Nadu
-</p>
-
+<section class="page-banner">
+  <h1>About Arafa Travels & Tours</h1>
+  <p class="subtext">Trusted travel services from Ayyampet, Thanjavur, Tamil Nadu</p>
 </section>
 
-<!-- SINGLE PROFESSIONAL IMAGE -->
-
 <section>
+  <h2>Who We Are</h2>
 
-<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05"
-class="about-img">
-
+  <div class="about-text">
+    <p>
+      Arafa Travels & Tours is a reliable travel service provider based in Ayyampet, Thanjavur, Tamil Nadu. We are committed to helping individuals, families, and groups travel with comfort, confidence, and convenience. Our services include flight booking, visa assistance, hotel reservations, Umrah packages, passport support, and complete travel planning. We focus on providing honest guidance, dependable service, and practical travel solutions tailored to the needs of every customer.
+    </p>
+  </div>
 </section>
-
-<!-- ABOUT CONTENT -->
-
-<section>
-
-<h2>Who We Are</h2>
-
-<div class="about-text">
-
-<p>
-Arafa Travels & Tours is a reliable travel service provider based in Ayyampet, Thanjavur, Tamil Nadu. We are committed to helping customers travel with comfort, confidence, and convenience.
-</p>
-
-<p>
-We support individuals, families, and groups with services such as flight booking, visa assistance, hotel reservations, Umrah packages, and travel planning.
-</p>
-
-<p>
-Our goal is to provide dependable guidance, honest service, and practical travel solutions for every customer.
-</p>
-
-</div>
-
-</section>
-
-<!-- MISSION -->
 
 <section class="cta">
-
-<h2>Our Mission</h2>
-
-<p style="max-width:800px;margin:auto;margin-top:15px;line-height:1.8;">
-To deliver reliable, affordable, and customer-friendly travel services with professionalism, care, and commitment.
-</p>
-
+  <h2>Our Mission</h2>
+  <p style="max-width:800px;margin:auto;margin-top:15px;line-height:1.8;">
+    To deliver reliable, affordable, and customer-friendly travel services with professionalism, care, and commitment.
+  </p>
 </section>
 
 <footer>
-<p>© 2026 Arafa Travels & Tours | Ayyampet, Thanjavur, Tamil Nadu</p>
+  <p>© 2026 Arafa Travels & Tours | Ayyampet, Thanjavur, Tamil Nadu</p>
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/918870075643" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>

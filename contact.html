@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact Us | Arafa Travels & Tours</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Arafa Travels & Tours for flight booking, visa support, Umrah packages, passport services, and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Arafa Travels & Tours</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-  <div class="logo">
+  <a href="index.html" class="logo">
     <img src="images/logo.png" alt="Arafa Travels & Tours Logo">
     <span>Arafa <span class="gold">Travels & Tours</span></span>
-  </div>
+  </a>
 
-  <nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+  <nav id="navMenu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -25,9 +32,7 @@
 
 <section class="page-banner">
   <h1>Contact Us</h1>
-  <p class="subtext">
-    We are here to support your travel needs.
-  </p>
+  <p class="subtext">We are here to support your travel needs.</p>
 </section>
 
 <section>
@@ -39,13 +44,13 @@
 
     <div class="card contact-card">
       <h3>📞 Phone</h3>
-      <p>+91 88700 75643</p>
-      <p>+91 95143 75643</p>
+      <p><a href="tel:+918870075643">+91 88700 75643</a></p>
+      <p><a href="tel:+919514375643">+91 95143 75643</a></p>
     </div>
 
     <div class="card contact-card">
       <h3>📧 Email</h3>
-      <p>arafatravelsazp@gmail.com</p>
+      <p><a href="mailto:arafatravelsazp@gmail.com">arafatravelsazp@gmail.com</a></p>
     </div>
 
     <div class="card contact-card">
@@ -55,20 +60,22 @@
   </div>
 </section>
 
-<section class="highlight-section">
-  <h2>Let’s Plan Your Journey</h2>
-  <p class="subtext">
-    Reach out today for trusted travel support and guidance.
-  </p>
 
-  <div class="section-btn">
-    <a class="btn" href="tel:+918870075643">Call Now</a>
-  </div>
-</section>
 
 <footer>
   <p>© 2026 Arafa Travels & Tours | Ayyampet, Thanjavur, Tamil Nadu</p>
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/918870075643" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>

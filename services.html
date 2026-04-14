@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services | Arafa Travels & Tours</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore travel services from Arafa Travels & Tours including air tickets, passport help, visa support, Umrah services, attestation, rentals, and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Arafa Travels & Tours</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-  <div class="logo">
+  <a href="index.html" class="logo">
     <img src="images/logo.png" alt="Arafa Travels & Tours Logo">
     <span>Arafa <span class="gold">Travels & Tours</span></span>
-  </div>
+  </a>
 
-  <nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+  <nav id="navMenu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html" class="active">Services</a>
@@ -23,13 +30,13 @@
   </nav>
 </header>
 
+<section class="page-banner">
+  <h1>Our Services</h1>
+  <p class="subtext">Complete travel and documentation services under one roof</p>
+</section>
 
 <section>
-  <h2>Our Services</h2>
-  <p class="subtext">Complete travel and documentation services under one roof</p>
-
   <div class="services-grid">
-
     <div class="card">
       <h3>✈️ Air Tickets</h3>
       <p>Domestic and international flight bookings with best available fares.</p>
@@ -60,16 +67,10 @@
       <p>Support for visa stamping processes with accurate documentation.</p>
     </div>
 
-    <div class="card">
-      <h3>🚆 Train & Bus Tickets</h3>
-      <p>Convenient booking for train and bus travel across India.</p>
-    </div>
-
-    <div class="card">
+        <div class="card">
       <h3>🚗 Vehicle Rentals</h3>
       <p>Reliable car rental services for local and outstation travel.</p>
     </div>
-
   </div>
 </section>
 
@@ -82,6 +83,17 @@
 <footer>
   <p>© 2026 Arafa Travels & Tours | Ayyampet, Thanjavur, Tamil Nadu</p>
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/918870075643" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
